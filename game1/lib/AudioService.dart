@@ -48,7 +48,7 @@ class AudioService {
     if (_filePath != null && File(_filePath!).existsSync()) {
       print(" Sending audio to backend...");
       await ApiService.uploadAudio(_filePath!);
-      gameRules.checkPronunciation(_filePath!); // ✅ Use the correct instance
+      gameRules.checkPronunciation(_filePath!); //  Use the correct instance
     } else {
       print(" No audio file found to send.");
     }

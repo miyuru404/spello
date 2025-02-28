@@ -3,7 +3,12 @@ import 'package:provider/provider.dart';
 import 'GameRules.dart';
 import 'AudioService.dart';
 
-class GamePage extends StatelessWidget {
+class GamePage extends StatefulWidget {
+  @override
+  State<GamePage> createState() => _GamePageState();
+}
+
+class _GamePageState extends State<GamePage> {
   final AudioService _audioService = AudioService();
 
   @override
